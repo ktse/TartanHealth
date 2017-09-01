@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ebolalert</title>
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet"  media="screen,projection"/>
+</head>
+
+<!--The beginning of the site-->
+<body>
+	<div class = "row valign-wrapper">
+		<div class = "col s12 center">
+			<a class = "header_home" href = "{{ url_for('home')}}" > Tartan Health </a>
+		</div>
+	</div>
+	
+	<hr>
+<!--andrew id-->
+	<div class = "row "> 
+		<div class=" col s1 center"> <h3> </h3> </div>
+		<div class=" col s3 center logindown">
+			    <div class="input-field ">
+			    	<form method="post" action="/login">
+			    	<input placeholder="Andrew ID" id="first_name" type="text" class="validate" name = "andrewid">
+			    	</form>
+			    </div> 
+			    <div class="center register_down">
+					<a href = "{{ url_for('register')}}"> Register </a>
+		  		</div>
+		</div>
+	  	<div class=" col s8 center">
+		  		<!--<img src="http://placehold.it/650x500">-->
+				<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~HansChen/12.embed?link=false" height="500" width="650"></iframe>
+	  	</div>	
+    </div>
+</body> 

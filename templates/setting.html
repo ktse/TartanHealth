@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ebolalert</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<!--The beginning of the site-->
+<body>
+	<div class = "row valign-wrapper">
+		<div class = "col s12 center">
+			<a class = "header_home" href = "index.html" > Tartan Health : Settings </a>
+		</div>	
+	</div>
+	<hr>
+	<div class = "row "> 
+		<div class=" col s4"> <h3></h3> </div>
+
+		<div class="col s4 ">
+			<div class = "center idDown">
+				<i class="material-icons prefix">account_circle</i>
+		    	<label for="icon_prefix">Andrew ID</label>
+			</div>
+			<select class="browser-default alldown">
+				<option value="" disabled selected>Reset Your Dorm</option>
+				<option value="1">Morewood</option>
+			    <option value="2">Stever</option>
+			    <option value="3">Mudge</option>
+			    <option value="4">Donner</option>
+			    <option value="5">Boss</option>
+			    <option value="6">Schlag</option>
+			    <option value="6">Scobel</option>
+			    <option value="7"></option>
+			</select>
+	  	
+			<div class = "row">
+			    <div class = "col s6 left-align sickdown">
+			    	<h4> Still Sick?</h4>
+			    </div>
+			    	<!-- Switch -->
+				<div class="switch col s6 leverDown">
+				    <label>
+				    Not Sick
+				    <input type="checkbox">
+				    <span class="lever"></span>
+				    Sick
+				    </label>
+				</div>
+			</div>
+
+			<div class = "row">
+				<div class="col s12 center">
+	    		<form method="post" action="/submitsettings">
+				<input class="create-submit" type="submit" value="Submit"/>  
+	  		</div>
+			</div>
+		</div>
+	</div>
+		<div class=" col s4"> <h3></h3> </div>
+    </div>
+</body>

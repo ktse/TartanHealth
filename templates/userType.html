@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ebolalert</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<!--The beginning of the site-->
+<body>
+	<div class = "row valign-wrapper">
+		<div class = "col s12 center">
+			<a class = "header_home" href = "index.html" > Tartan Health </a>
+		</div>
+	</div>
+	<hr>
+<!--andrew id shown-->
+	<div>
+		<div class = "row "> 
+<!--Large graph and live feed div-->
+					<div class = "row">
+					<!--Graph-->
+						<div class = "col s9 left-align">
+							<div>
+								<ul class="tabs vertical">
+							        <li class="tab col s3"><a href="{{ url_for('userPersonal')}}">Personal</a></li>
+							        <li class="tab col s3"><a href="{{ url_for('userDorm')}}">Dorm</a></li>
+							        <li class="tab col s3"><a href="{{ url_for('userType')}}">Type</a></li>
+							    </ul>
+							</div>
+							<div class  = "border vertical">
+								<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~HansChen/18.embed?link=false" height="500" width="450"></iframe>
+								<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~HansChen/16.embed?link=false" height="500" width="450"></iframe>
+							</div>
+						</div>
+					<!--live feed-->
+						<div class = "col s3 center ">
+							<!--<img src="http://placehold.it/325x500">-->
+							<!--tabs-->
+							<div class="row">
+							    <div class="col s12">
+							      <ul class="tabs">
+							        <li class="tab col s6"><a href="#time">Time</a></li>
+							        <li class="tab col s6"><a href="#location">Location</a></li>
+							      </ul>
+							    </div>
+							  </div>
+							<!--end tabs-->
+						</div>
+					</div>
+	    </div>
+	</div>
+
+
+</body>

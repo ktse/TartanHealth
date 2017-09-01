@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ebolalert</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<!--The beginning of the site-->
+<body>
+	<div class = "row valign-wrapper">
+		<div class = "col s12 center">
+			<a class = "header_home" href = "index.html" > Tartan Health : Register</a>
+		</div>
+	</div>
+	
+	<hr>
+<!--andrew id-->
+	<div class = "row "> 
+		<div class=" col s4"> <h3></h3> </div>
+		<div class=" col s4 center alldown">
+		    <div class="input-field col s12">
+		    	<form method="post" action="/newpost">
+            		<p>What's your Andrew ID?</p>
+            		<input class="create-name" type="text" name="post-name" placeholder="Andrew Id" maxlength="50" />
+            		<p>What Dorm Do You Live in?</p>
+            		<select class="browser-default" name = "post-title" type = "text">
+				    	<option value="" disabled selected>Enter Your Dorm</option>
+				    	<option value="1">Morewood</option>
+				    	<option value="2">Stever</option>
+				    	<option value="3">Mudge</option>
+				   	 	<option value="4">Donner</option>
+				    	<option value="5">Boss</option>
+				    	<option value="6">Schlag</option>
+				    	<option value="6">Scobel</option>
+				    	<option value="7">Other</option>
+				  	</select>
+            		<br />
+            		<br />
+            	<input class="create-submit" type="submit" value="Create Post" />
+          		</form>
+		    </div>
+		</div>
+		<div class=" col s4"> <h3></h3> </div>
+    </div>
+    </body> 

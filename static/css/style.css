@@ -1,0 +1,61 @@
+/* MAIN BAR*/
+.logo_location{
+	margin-top: 30px
+}
+
+.header_home{
+	font-size: 80px;
+	color:#e57373;
+}
+
+.title_link{
+	font-size: 45px;
+	color: #e57373;
+}
+
+.background_bar{
+	background-color: #4db6ac;
+}
+
+/* INDEX*/
+.logindown{
+	margin-top: 180px;
+}
+.register_down{
+	margin-top: 20px;
+}
+.rightBorder{
+	border-right:thin solid #000000;
+}
+
+/* CHECK 1 AND CHECK 2*/
+.yessize{
+	height:300px;
+	width: 300px;
+}
+
+/* USER */
+.vertical{
+	border-right: thin solid #000000;
+}
+
+/*SETTINGS*/
+.settingsHeader{
+	margin-left: 200px;
+}
+
+.sickdown{
+	margin-top: 20px;
+}
+
+.leverDown{
+	margin-top: 40px;
+}
+
+.alldown{
+	margin-top: 40px;
+}
+
+.idDown{
+	margin-top: 120px;
+}

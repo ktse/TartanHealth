@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ebolalert</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<!--The beginning of the site-->
+<body>
+	<div class = "row valign-wrapper">
+		<div class = "col s12 center">
+			<a class = "header_home" href = "index.html" > Tartan Health </a>
+		</div>
+	</div>
+	<hr>
+
+	<div> 
+		<div class = "row center">
+			<h1> Are You Still Sick?</h1>
+		</div>
+	</div>
+	<div> 
+		<div class = "row center">
+			<div class = "col s2"> <h3> <h3> </div>
+			<div class = "col s4">
+				<form method="post" action="/checkType">
+				<a href = "{{ url_for('user')}}">
+					<img class = "yessize" src="{{ url_for('static', filename='images/YES2.jpg')}}" alt="Yes">
+				</a>
+				</form>
+			</div>
+			<div class = "col s4">
+				<a href = "{{ url_for('user')}}">
+					<img class = "yessize" src="{{ url_for('static', filename='images/NO.jpg')}}" alt="No">
+				</a>
+			</div>
+			<div class = "col s2"> <h3> <h3> </div>
+		</div>
+	</div>
+
+</body>
